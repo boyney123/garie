@@ -1,0 +1,23 @@
+version: "3"
+services:
+  prometheus:
+    image: quay.io/prometheus/prometheus:latest
+    ports:
+     - 9090:9090
+    volumes:
+     - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+  garie:
+    depends_on:
+      - grafana
+    image: garie
+    ports:
+      - 8080:8080
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=secret
+    volumes:
+      - "./grafana/provisioning:/etc/grafana/provisioning"  
+      - "./grafana/dashboards:/var/lib/grafana/dashboards"
