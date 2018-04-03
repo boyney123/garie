@@ -1,5 +1,7 @@
 # Perfie
 
+![OpenFaaS Logo](./assets/logo.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Perfie is a open source tool for monitoring web performance using promethus and graphna. 
