@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "PAGE_SPEED_INSIGHTS_KEY=PAGE_SPEED_INSIGHTS_KEY LIGHTHOUSE_API_KEY=LIGHTHOUSE_API_KEY jest --watch"
+    "test": "PAGE_SPEED_INSIGHTS_KEY=PAGE_SPEED_INSIGHTS_KEY LIGHTHOUSE_API_KEY=LIGHTHOUSE_API_KEY jest"
   },
   "dependencies": {
     "debug": "~2.6.9",
