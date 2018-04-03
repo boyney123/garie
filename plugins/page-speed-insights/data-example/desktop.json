@@ -1,0 +1,199 @@
+{
+    "captchaResult": "CAPTCHA_NOT_NEEDED",
+    "kind": "pagespeedonline#result",
+    "id": "http://www.example.com/",
+    "responseCode": 200,
+    "title": "Example Domain",
+    "ruleGroups": {
+        "SPEED": {
+            "score": 100
+        }
+    },
+    "loadingExperience": {
+        "id": "http://www.example.com/",
+        "metrics": {
+            "FIRST_CONTENTFUL_PAINT_MS": {
+                "median": 648,
+                "distributions": [{
+                    "min": 0,
+                    "max": 984,
+                    "proportion": 0.7202994840820435
+                }, {
+                    "min": 984,
+                    "max": 2073,
+                    "proportion": 0.21100635459921982
+                }, {
+                    "min": 2073,
+                    "proportion": 0.06869416131873665
+                }],
+                "category": "FAST"
+            },
+            "DOM_CONTENT_LOADED_EVENT_FIRED_MS": {
+                "median": 610,
+                "distributions": [{
+                    "min": 0,
+                    "max": 1366,
+                    "proportion": 0.8565565932844118
+                }, {
+                    "min": 1366,
+                    "max": 2787,
+                    "proportion": 0.11225344674227265
+                }, {
+                    "min": 2787,
+                    "proportion": 0.03118995997331554
+                }],
+                "category": "FAST"
+            }
+        },
+        "overall_category": "FAST",
+        "initial_url": "http://www.example.com/"
+    },
+    "pageStats": {
+        "numberResources": 1,
+        "numberHosts": 1,
+        "totalRequestBytes": "37",
+        "htmlResponseBytes": "1600",
+        "overTheWireResponseBytes": "606",
+        "numTotalRoundTrips": 3,
+        "numRenderBlockingRoundTrips": 0
+    },
+    "formattedResults": {
+        "locale": "en_US",
+        "ruleResults": {
+            "AvoidLandingPageRedirects": {
+                "localizedRuleName": "Avoid landing page redirects",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+                    }]
+                }
+            },
+            "EnableGzipCompression": {
+                "localizedRuleName": "Enable compression",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+                    }]
+                }
+            },
+            "LeverageBrowserCaching": {
+                "localizedRuleName": "Leverage browser caching",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "You have enabled browser caching. Learn more about {{BEGIN_LINK}}browser caching recommendations{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+                    }]
+                }
+            },
+            "MainResourceServerResponseTime": {
+                "localizedRuleName": "Reduce server response time",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your server responded quickly. Learn more about {{BEGIN_LINK}}server response time optimization{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/Server"
+                    }]
+                }
+            },
+            "MinifyCss": {
+                "localizedRuleName": "Minify CSS",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                    }]
+                }
+            },
+            "MinifyHTML": {
+                "localizedRuleName": "Minify HTML",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your HTML is minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                    }]
+                }
+            },
+            "MinifyJavaScript": {
+                "localizedRuleName": "Minify JavaScript",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your JavaScript content is minified. Learn more about {{BEGIN_LINK}}minifying JavaScript{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                    }]
+                }
+            },
+            "MinimizeRenderBlockingResources": {
+                "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "You have no render-blocking resources. Learn more about {{BEGIN_LINK}}removing render-blocking resources{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/BlockingJS"
+                    }]
+                }
+            },
+            "OptimizeImages": {
+                "localizedRuleName": "Optimize images",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "Your images are optimized. Learn more about {{BEGIN_LINK}}optimizing images{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+                    }]
+                }
+            },
+            "PrioritizeVisibleContent": {
+                "localizedRuleName": "Prioritize visible content",
+                "ruleImpact": 0,
+                "groups": ["SPEED"],
+                "summary": {
+                    "format": "You have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing visible content{{END_LINK}}.",
+                    "args": [{
+                        "type": "HYPERLINK",
+                        "key": "LINK",
+                        "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+                    }]
+                }
+            }
+        }
+    },
+    "version": {
+        "major": 1,
+        "minor": 15
+    }
+}

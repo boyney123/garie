@@ -2,6 +2,9 @@ var createError = require('http-errors');
 var express = require('express');
 var logger = require('morgan');
 
+const lighthouse = require('./plugins/lighthouse');
+const pageSpeedInsights = require('./plugins/page-speed-insights');
+
 var app = express();
 
 app.use(logger('dev'));
@@ -14,7 +17,7 @@ const collectDefaultMetrics = client.collectDefaultMetrics;
 const Registry = client.Registry;
 const register = new Registry();
 
-collectDefaultMetrics({ register });
+// collectDefaultMetrics({ register });
 
 const gauge = new client.Gauge({ name: 'metric_name', help: 'metric_help' });
 const counter = new client.Counter({
@@ -34,6 +37,8 @@ app.get('/metrics', (req, res) => {
 	res.end(client.register.metrics());
 });
 
+app.use('/lighthouse', lighthouse);
+app.use('/page-speed-insights', pageSpeedInsights);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -51,4 +56,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+module.exports = {
+  app: app,
+  client: client
+};

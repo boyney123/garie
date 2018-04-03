@@ -4,10 +4,9 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../app').app;
 var debug = require('debug')('garie-opensource:server');
 var http = require('http');
-const request = require('request');
 
 /**
  * Get port from environment and store in Express.

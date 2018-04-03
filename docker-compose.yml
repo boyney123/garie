@@ -9,7 +9,14 @@ services:
   garie:
     depends_on:
       - grafana
+      - lighthouse
+    links:
+      - lighthouse  
     image: garie
+    environment:
+      - LIGHTHOUSE_URL=http://lighthouse:8080
+      - PAGE_SPEED_INSIGHTS_KEY
+      - LIGHTHOUSE_API_KEY
     ports:
       - 8080:8080
   grafana:
@@ -21,3 +28,10 @@ services:
     volumes:
       - "./grafana/provisioning:/etc/grafana/provisioning"  
       - "./grafana/dashboards:/var/lib/grafana/dashboards"
+  lighthouse:
+    image: lighthouse_ci:latest
+    container_name: lighthouse
+    ports:
+      - "4000:8080"
+    cap_add:
+      - SYS_ADMIN    

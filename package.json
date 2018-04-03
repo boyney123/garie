@@ -3,16 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "PAGE_SPEED_INSIGHTS_KEY=PAGE_SPEED_INSIGHTS_KEY LIGHTHOUSE_API_KEY=LIGHTHOUSE_API_KEY jest --watch"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "jade": "~1.11.0",
     "morgan": "~1.9.0",
     "prom-client": "^11.0.0",
-    "request": "^2.85.0"
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^9.2.3",
+    "supertest": "^3.0.0"
   }
 }

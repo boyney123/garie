@@ -26,7 +26,7 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: 'hashbrowns'
+  - job_name: 'garie'
 
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
