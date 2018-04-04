@@ -15,6 +15,10 @@ Perfie is a open source tool for monitoring web performance using promethus and 
 
 Perfie is a simple express server sat ontop of multiple docker containers to collect performance data through multiple performance tools. The data is stored in promethesus and visualised using Grafana.
 
+![Dashboard screenshot 1](./assets/screen-shot-1.png)
+![Dashboard screenshot 2](./assets/screen-shot-2.png)
+![Dashboard screenshot 3](./assets/screen-shot-3.png)
+
 ### Prerequisites
 
 - Docker and Node 8.10.0 or greater.
