@@ -27,7 +27,10 @@ Perfie is a simple express server sat ontop of multiple docker containers to col
 PAGE_SPEED_INSIGHTS_KEY={PAGE_SPEED_INSIGHTS_KEY} LIGHTHOUSE_API_KEY={LIGHTHOUSE_API_KEY} docker-compose up
 ```
 
-Once docker-compose has complete, go to localhost:3000 to view your dashboard that is already setup and good to go!
+Once docker-compose has complete, go to [http://localhost](http://localhost) to view your dashboard that is already setup and good to go!
+
+- username: admin
+- password: secret
 
 ### Capturing data
 
@@ -53,5 +56,12 @@ Example: `http://localhost:8080/page-speed-insights?url=http://www.google.co.uk&
 
 ### Viewing dashboards
 
-You can view your dashboards at localhost:3000
+You can view your dashboards at [http://localhost](http://localhost). You will be asked to login. Please use the credentials below.
+
+- username: admin
+- password: secret
+
+### Avaiable Metrics
+
+TODO: List all the metrics, where they come from and what they mean? in a table?
 
