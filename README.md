@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Perfie Logo](./assets/logo.png)
+![Garie Logo](./assets/logo.png)
 
-Perfie is a open source tool for monitoring web performance using promethus and graphna. Perfie integrated with lighthouse, page speed insights and web page test to gather performance metrics then logs them into promethesus.
+Garie is a open source tool for monitoring web performance using promethus and graphna. Garie integrated with lighthouse, page speed insights and web page test to gather performance metrics then logs them into promethesus.
 
 **Highlights**
 
@@ -11,9 +11,9 @@ Perfie is a open source tool for monitoring web performance using promethus and 
 * View performance data over time.
 * Integrated with Lighthouse, Page-speed-insights & Web page test.
 
-## Overview of Perfie
+## Overview of Garie
 
-Perfie is a simple express server sat ontop of multiple docker containers to collect performance data through multiple performance tools. The data is stored in promethesus and visualised using Grafana.
+Garie is a simple express server sat ontop of multiple docker containers to collect performance data through multiple performance tools. The data is stored in promethesus and visualised using Grafana.
 
 ![Dashboard screenshot 1](./assets/screen-shot-1.png)
 ![Dashboard screenshot 2](./assets/screen-shot-2.png)
