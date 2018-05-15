@@ -12,7 +12,7 @@ services:
       - lighthouse
     links:
       - lighthouse  
-    image: garie
+    image: boyney123/garie
     environment:
       - LIGHTHOUSE_URL=http://lighthouse:8080
       - PAGE_SPEED_INSIGHTS_KEY
@@ -29,7 +29,7 @@ services:
       - "./grafana/provisioning:/etc/grafana/provisioning"  
       - "./grafana/dashboards:/var/lib/grafana/dashboards"
   lighthouse:
-    image: lighthouse_ci:latest
+    image: boyney123/lighthouse_ci
     container_name: lighthouse
     ports:
       - "4000:8080"
