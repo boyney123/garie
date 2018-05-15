@@ -11,7 +11,7 @@ Garie is a open source tool for monitoring web performance using promethus and g
 * Setup everything with one command.
 * Out the box dashboards.
 * View performance data over time.
-* Integrated with Lighthouse, Page-speed-insights & Web page test.
+* Integrated with Lighthouse, Page-speed-insights
 
 
 ## Overview of Garie
@@ -68,7 +68,5 @@ You can view your dashboards at [http://localhost](http://localhost). You will b
 - username: admin
 - password: secret
 
-### Avaiable Metrics
 
-TODO: List all the metrics, where they come from and what they mean? in a table?
 
