@@ -6,8 +6,6 @@ const raiseMetric = (name, product, value) => {
 
     if(!metrics[name]){
 
-        console.log(client)
-
         metrics[name] = new client.Gauge({ 
             name: name,
             help: 'metric_help',
@@ -16,6 +14,8 @@ const raiseMetric = (name, product, value) => {
       }
 
       metrics[name].set({ product }, parseFloat(value));
+
+      return metrics;
 
 };
 

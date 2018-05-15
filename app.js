@@ -1,36 +1,20 @@
-var createError = require('http-errors');
-var express = require('express');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const logger = require('morgan');
+
+const app = express();
+const client = require('prom-client');
 
 const lighthouse = require('./plugins/lighthouse');
 const pageSpeedInsights = require('./plugins/page-speed-insights');
-
-var app = express();
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-const client = require('prom-client');
 
 const collectDefaultMetrics = client.collectDefaultMetrics;
 const Registry = client.Registry;
 const register = new Registry();
 
-// collectDefaultMetrics({ register });
-
-const gauge = new client.Gauge({ name: 'metric_name', help: 'metric_help' });
-const counter = new client.Counter({
-  name: 'metric_name2',
-  help: 'metric_help32'
-});
-
-counter.inc(Math.random() * 100);
-
-app.get('/count', (req, res) => {
-  counter.inc(Math.random() * 100);
-  res.send(200);
-});
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get('/metrics', (req, res) => {
 	res.set('Content-Type', register.contentType);
