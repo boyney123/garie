@@ -6,6 +6,8 @@ Status](https://travis-ci.org/boyney123/garie.svg?branch=master)](https://travis
 
 Garie is a open source tool for monitoring web performance using promethus and graphna. Garie integrated with lighthouse and page speed insights to gather performance metrics then logs them into promethesus.
 
+[https://medium.com/@boyney123/an-out-the-box-tool-to-monitor-your-web-application-performance-using-docker](https://medium.com/@boyney123/an-out-the-box-tool-to-monitor-your-web-application-performance-using-docker-9bda70056b90)
+
 **Highlights**
 
 * Setup everything with one command.
