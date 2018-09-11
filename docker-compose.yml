@@ -1,0 +1,30 @@
+version: "3"
+services:
+  influxdb:
+    image: "influxdb:latest"
+    ports:
+      - 8086:8086
+    environment:
+      - INFLUXDB_DB=asdada
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=admin
+  garie-lighthouse:
+    image: "garie-lighthouse:latest"
+    ports:
+      - 3000:3000
+    environment:
+      - HOST=influxdb
+    volumes:
+      - ./plugins/garie-lighthouse/config.json:/usr/src/garie-lighthouse/lighthouse-config.json
+      - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
+      - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
+    depends_on:
+      - influxdb
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 80:3000
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=secret
+    volumes:
+      - "./config/grafana/provisioning:/etc/grafana/provisioning"
