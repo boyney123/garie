@@ -5,19 +5,33 @@ services:
     ports:
       - 8086:8086
     environment:
-      - INFLUXDB_DB=asdada
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
   garie-lighthouse:
-    image: "garie-lighthouse:latest"
+    image: "garie/lighthouse"
     ports:
       - 3000:3000
     environment:
       - HOST=influxdb
     volumes:
-      - ./plugins/garie-lighthouse/config.json:/usr/src/garie-lighthouse/lighthouse-config.json
+      - ./garie-config.json:/usr/src/garie-lighthouse/lighthouse-config.json
       - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
       - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
+    depends_on:
+      - influxdb
+  garie-browsertime:
+    image: "garie/browsertime"
+    ports:
+      - 3001:3000
+    environment:
+      - HOST=influxdb
+      - REPORT_DIR
+    volumes:
+      - ./garie-config.json:/usr/src/garie-browsertime/config.json
+      - ./plugins/garie-browsertime/reports:/usr/src/garie-browsertime/reports
+      - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
+      - /var/run/docker.sock:/run/docker.sock
+      - /usr/local/bin/docker:/bin/docker
     depends_on:
       - influxdb
   grafana:

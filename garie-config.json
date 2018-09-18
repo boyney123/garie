@@ -3,7 +3,12 @@
 	"urls": [
 		{
 			"url": "https://www.google.com",
-			"report": true
+			"plugins": [
+				{
+					"name": "lighthouse",
+					"report": true
+				}
+			]
 		}
 	]
 }
