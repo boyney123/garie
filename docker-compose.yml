@@ -54,3 +54,9 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=secret
     volumes:
       - "./config/grafana/provisioning:/etc/grafana/provisioning"
+  chronograf:
+    image: "chronograf:latest"
+    ports:
+      - 8888:8888
+    depends_on:
+      - influxdb
