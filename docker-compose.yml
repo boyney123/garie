@@ -35,7 +35,7 @@ services:
     depends_on:
       - influxdb
   garie-pagespeed-insights:
-    image: "garie-pagespeed-insights"
+    image: "garie/pagespeed-insights"
     ports:
       - 3002:3000
     environment:
@@ -54,6 +54,8 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=secret
     volumes:
       - "./config/grafana/provisioning:/etc/grafana/provisioning"
+    depends_on:
+      - influxdb
   chronograf:
     image: "chronograf:latest"
     ports:
