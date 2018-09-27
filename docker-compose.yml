@@ -34,18 +34,18 @@ services:
   #     - /usr/local/bin/docker:/bin/docker
   #   depends_on:
   #     - influxdb
-  # garie-pagespeed-insights:
-  #   image: "garie/pagespeed-insights"
-  #   ports:
-  #     - 3002:3000
-  #   environment:
-  #     - HOST=influxdb
-  #     - PAGESPEED_INSIGHTS_KEY
-  #   volumes:
-  #     - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
-  #     - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
-  #   depends_on:
-  #     - influxdb
+  garie-pagespeed-insights:
+    image: "garie/pagespeed-insights"
+    ports:
+      - 3002:3000
+    environment:
+      - HOST=influxdb
+      - PAGESPEED_INSIGHTS_KEY
+    volumes:
+      - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
+      - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
+    depends_on:
+      - influxdb
   grafana:
     image: grafana/grafana
     ports:
