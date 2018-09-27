@@ -32,7 +32,7 @@ services:
       - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
       - /var/run/docker.sock:/run/docker.sock
       # - /usr/local/bin/docker:/bin/docker
-      - /usr/bin/docker:/usr/bin/docker
+      - ${DOCKER_PATH}:/usr/bin/docker
     depends_on:
       - influxdb
   garie-pagespeed-insights:
