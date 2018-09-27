@@ -1,22 +1,16 @@
+# config file version
+apiVersion: 1
+
+# list of datasources to insert/update depending
+# what's available in the database
 datasources:
+  # <string, required> name of the datasource. Required
   - name: Lighthouse
+    # <string, required> datasource type. Required
     type: influxdb
-    access: proxy
     database: lighthouse
-    user: admin
-    password: admin
-    url: http://influxdb:8086
-  - name: Pagespeed-Insights
-    type: influxdb
+    # <string, required> access mode. proxy or direct (Server or Browser in the UI). Required
     access: proxy
-    database: pagespeed-insights
-    user: admin
-    password: admin
+    # <string> url
     url: http://influxdb:8086
-  - name: Browsertime
-    type: influxdb
-    access: proxy
-    database: browsertime
-    user: admin
-    password: admin
-    url: http://influxdb:8086
+    version: 1
