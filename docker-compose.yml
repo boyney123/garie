@@ -7,18 +7,18 @@ services:
     environment:
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
-  # garie-lighthouse:
-  #   image: "garie/lighthouse"
-  #   ports:
-  #     - 3000:3000
-  #   environment:
-  #     - HOST=influxdb
-  #   volumes:
-  #     - ./garie-config.json:/usr/src/garie-lighthouse/config.json
-  #     - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
-  #     - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
-  #   depends_on:
-  #     - influxdb
+  garie-lighthouse:
+    image: "garie/lighthouse"
+    ports:
+      - 3000:3000
+    environment:
+      - HOST=influxdb
+    volumes:
+      - ./garie-config.json:/usr/src/garie-lighthouse/config.json
+      - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
+      - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
+    depends_on:
+      - influxdb
   garie-browsertime:
     image: "garie/browsertime"
     ports:
@@ -31,21 +31,22 @@ services:
       - ./plugins/garie-browsertime/reports:/usr/src/garie-browsertime/reports
       - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
       - /var/run/docker.sock:/run/docker.sock
-      - /usr/local/bin/docker:/bin/docker
+      # - /usr/local/bin/docker:/bin/docker
+      - /usr/bin/docker:/usr/bin/docker
     depends_on:
       - influxdb
-  # garie-pagespeed-insights:
-  #   image: "garie/pagespeed-insights"
-  #   ports:
-  #     - 3002:3000
-  #   environment:
-  #     - HOST=influxdb
-  #     - PAGESPEED_INSIGHTS_KEY
-  #   volumes:
-  #     - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
-  #     - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
-  #   depends_on:
-  #     - influxdb
+  garie-pagespeed-insights:
+    image: "garie/pagespeed-insights"
+    ports:
+      - 3002:3000
+    environment:
+      - HOST=influxdb
+      - PAGESPEED_INSIGHTS_KEY
+    volumes:
+      - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
+      - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
+    depends_on:
+      - influxdb
   grafana:
     image: grafana/grafana
     ports:
@@ -57,9 +58,9 @@ services:
       # - "./config/grafana/dashboards:/var/lib/grafana/dashboards"
     depends_on:
       - influxdb
-  # chronograf:
-  #   image: "chronograf:latest"
-  #   ports:
-  #     - 8888:8888
-  #   depends_on:
-  #     - influxdb
+  chronograf:
+    image: "chronograf:latest"
+    ports:
+      - 8888:8888
+    depends_on:
+      - influxdb
