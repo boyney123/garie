@@ -7,45 +7,45 @@ services:
     environment:
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
-  garie-lighthouse:
-    image: "garie/lighthouse"
-    ports:
-      - 3000:3000
-    environment:
-      - HOST=influxdb
-    volumes:
-      - ./garie-config.json:/usr/src/garie-lighthouse/config.json
-      - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
-      - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
-    depends_on:
-      - influxdb
-  # garie-browsertime:
-  #   image: "garie/browsertime"
+  # garie-lighthouse:
+  #   image: "garie/lighthouse"
   #   ports:
-  #     - 3001:3000
+  #     - 3000:3000
   #   environment:
   #     - HOST=influxdb
-  #     - REPORT_DIR
   #   volumes:
-  #     - ./garie-config.json:/usr/src/garie-browsertime/config.json
-  #     - ./plugins/garie-browsertime/reports:/usr/src/garie-browsertime/reports
-  #     - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
-  #     - /var/run/docker.sock:/run/docker.sock
-  #     - /usr/local/bin/docker:/bin/docker
+  #     - ./garie-config.json:/usr/src/garie-lighthouse/config.json
+  #     - ./plugins/garie-lighthouse/reports:/usr/src/garie-lighthouse/reports
+  #     - ./plugins/garie-lighthouse/logs:/usr/src/garie-lighthouse/logs
   #   depends_on:
   #     - influxdb
-  garie-pagespeed-insights:
-    image: "garie/pagespeed-insights"
+  garie-browsertime:
+    image: "garie/browsertime"
     ports:
-      - 3002:3000
+      - 3001:3000
     environment:
       - HOST=influxdb
-      - PAGESPEED_INSIGHTS_KEY
+      - REPORT_DIR
     volumes:
-      - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
-      - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
+      - ./garie-config.json:/usr/src/garie-browsertime/config.json
+      - ./plugins/garie-browsertime/reports:/usr/src/garie-browsertime/reports
+      - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
+      - /var/run/docker.sock:/run/docker.sock
+      - /usr/local/bin/docker:/bin/docker
     depends_on:
       - influxdb
+  # garie-pagespeed-insights:
+  #   image: "garie/pagespeed-insights"
+  #   ports:
+  #     - 3002:3000
+  #   environment:
+  #     - HOST=influxdb
+  #     - PAGESPEED_INSIGHTS_KEY
+  #   volumes:
+  #     - ./garie-config.json:/usr/src/garie-pagespeed-insights/config.json
+  #     - ./plugins/garie-pagespeed-insights/logs:/usr/src/garie-pagespeed-insights/logs
+  #   depends_on:
+  #     - influxdb
   grafana:
     image: grafana/grafana
     ports:
