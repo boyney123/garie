@@ -1,8 +1,8 @@
 {
-	"cron": "0 */10 * * * *",
+	"cron": "0 */30 * * * *",
 	"urls": [
 		{
-			"url": "https://www.google.com",
+			"url": "https://www.bbc.co.uk",
 			"plugins": [
 				{
 					"name": "lighthouse",

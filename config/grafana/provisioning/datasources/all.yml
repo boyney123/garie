@@ -1,0 +1,22 @@
+datasources:
+  - name: Lighthouse
+    type: influxdb
+    access: proxy
+    database: lighthouse
+    user: admin
+    password: admin
+    url: http://influxdb:8086
+  - name: Pagespeed-Insights
+    type: influxdb
+    access: proxy
+    database: pagespeed-insights
+    user: admin
+    password: admin
+    url: http://influxdb:8086
+  - name: Browsertime
+    type: influxdb
+    access: proxy
+    database: browsertime
+    user: admin
+    password: admin
+    url: http://influxdb:8086
