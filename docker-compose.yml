@@ -55,8 +55,8 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=secret
     volumes:
-      - ./grafana_data:/var/lib/grafana
-        "./config/grafana/provisioning:/etc/grafana/provisioning"
+      - "./grafana_data:/var/lib/grafana"
+      - "./config/grafana/provisioning:/etc/grafana/provisioning"
       - "./config/grafana/grafana.ini:/etc/grafana/grafana.ini"
     depends_on:
       - influxdb

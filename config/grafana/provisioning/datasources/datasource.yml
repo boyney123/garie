@@ -1,9 +1,11 @@
 # config file version
 apiVersion: 1
- deleteDatasources:
+
+deleteDatasources:
   - name: Lighthouse
     orgId: 1
- datasources:
+
+datasources:
   # <string, required> name of the datasource. Required
   - name: Lighthouse
     # <string, required> datasource type. Required

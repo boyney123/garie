@@ -1,5 +1,6 @@
 apiVersion: 1
- providers:
+
+providers:
   - name: "test"
     orgId: 1
     folder: ""
