@@ -2,7 +2,7 @@
 	"cron": "0 */10 * * * *",
 	"urls": [
 		{
-			"url": "https://www.google.com",
+			"url": "https://www.google.co.uk",
 			"plugins": [
 				{
 					"name": "lighthouse",

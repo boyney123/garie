@@ -5,3 +5,5 @@ yarn.lock
 coverage
 logs
 reports
+/influxdb
+/grafana_data
