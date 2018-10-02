@@ -6,3 +6,5 @@ coverage
 logs
 reports
 .DS_Store
+/influxdb
+/grafana_data

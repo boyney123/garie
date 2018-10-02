@@ -7,10 +7,12 @@ services:
     environment:
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
+    volumes:
+      - ./influxdb:/var/lib/influxdb
   garie-lighthouse:
     image: "garie/lighthouse"
     ports:
-      - 3000:3000
+      - 3003:3000
     environment:
       - HOST=influxdb
     volumes:
@@ -54,6 +56,7 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=secret
     volumes:
+      - ./grafana_data:/var/lib/grafana
       - "./config/grafana/provisioning:/etc/grafana/provisioning"
       - "./config/grafana/grafana.ini:/etc/grafana/grafana.ini"
       # - "./config/grafana/dashboards:/var/lib/grafana/dashboards"
