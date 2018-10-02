@@ -7,6 +7,8 @@ services:
     environment:
       - INFLUXDB_ADMIN_USER=admin
       - INFLUXDB_ADMIN_PASSWORD=admin
+    volumes:
+      - ./influxdb:/var/lib/influxdb
   garie-lighthouse:
     image: "garie/lighthouse"
     ports:
@@ -31,7 +33,7 @@ services:
       - ./plugins/garie-browsertime/reports:/usr/src/garie-browsertime/reports
       - ./plugins/garie-browsertime/logs:/usr/src/garie-browsertime/logs
       - /var/run/docker.sock:/run/docker.sock
-      - /usr/local/bin/docker:/bin/docker
+      - ${DOCKER_PATH}:/usr/bin/docker
     depends_on:
       - influxdb
   garie-pagespeed-insights:
@@ -53,8 +55,9 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=secret
     volumes:
+      - "./grafana_data:/var/lib/grafana"
       - "./config/grafana/provisioning:/etc/grafana/provisioning"
-      - "./config/grafana/dashboards:/var/lib/grafana/dashboards"
+      - "./config/grafana/grafana.ini:/etc/grafana/grafana.ini"
     depends_on:
       - influxdb
   chronograf:
