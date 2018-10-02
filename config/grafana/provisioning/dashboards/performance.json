@@ -69,7 +69,7 @@
 	"links": [],
 	"panels": [
 		{
-			"content": "<h1 style=\"text-align:center;\">www.google.co.uk</h1>",
+			"content": "<h1 style=\"text-align:center;\">www.google.com</h1>",
 			"gridPos": {
 				"h": 2,
 				"w": 24,
@@ -812,7 +812,7 @@
 						{
 							"key": "url",
 							"operator": "=",
-							"value": "https://www.google.co.uk"
+							"value": "https://www.google.com"
 						}
 					]
 				}
@@ -918,7 +918,7 @@
 						{
 							"key": "url",
 							"operator": "=",
-							"value": "https://www.google.co.uk"
+							"value": "https://www.google.com"
 						}
 					]
 				}
@@ -1024,7 +1024,7 @@
 						{
 							"key": "url",
 							"operator": "=",
-							"value": "https://www.google.co.uk"
+							"value": "https://www.google.com"
 						}
 					]
 				}
@@ -1130,7 +1130,7 @@
 						{
 							"key": "url",
 							"operator": "=",
-							"value": "https://www.google.co.uk"
+							"value": "https://www.google.com"
 						}
 					]
 				}
@@ -1236,7 +1236,7 @@
 						{
 							"key": "url",
 							"operator": "=",
-							"value": "https://www.google.co.uk"
+							"value": "https://www.google.com"
 						}
 					]
 				}
