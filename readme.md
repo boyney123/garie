@@ -2,16 +2,14 @@
 
 <p align="center">
   <p align="center">Making web performance assessable to everyone. <p>
-  <p align="center"><a align="center" href="https://garie.io">https://garie.io</a><p>
-  <p align="center"><a href="https://travis-ci.org/boyney123/garie-lighthouse"><img src="https://img.shields.io/travis/boyney123/garie-lighthouse/master.svg" alt="Build Status"></a>
-    <a href="https://codecov.io/gh/boyney123/garie-lighthouse/"><img src="https://codecov.io/gh/boyney123/garie-lighthouse/branch/master/graph/badge.svg?token=AoXW3EFgMP" alt="Codecov"></a>
-	<a href="https://github.com/boyney123/garie"><img src="https://img.shields.io/badge/plugin%20built%20for-garie-blue.svg" alt="garie"></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
+  <p align="center"><a align="center" href="https://garie.io">https://garie.io</a>
 
   </p>
 </p>
 
-**Highlights**
+---
+
+## Highlights
 
 - Get setup with polling performance data and out of the box dashboards within minutes.
 - Setup CRON jobs to get performance data at any interval.
