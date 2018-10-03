@@ -1,16 +1,15 @@
-![Garie](./screenshots/garie-dark.png "Garie")
+## Garie - Making web performance assessable to everyone
+
+[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg)](https://www.influxdata.com/)
+[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-Grafana-green.svg)](https://grafana.com/)
+[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-Docker-blue.svg)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <p align="center">Making web performance assessable to everyone. <p>
-  <p align="center"><a align="center" href="https://garie.io">https://garie.io</a><p>
-  <p align="center">
-	<a href="https://www.influxdata.com/"><img src="https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg" alt="garie"></a>
-		<a href="hhttps://grafana.com/"><img src="https://img.shields.io/badge/built%20with%20-Grafana-green.svg" alt="garie"></a>
-		<a href="https://www.docker.com/"><img src="https://img.shields.io/badge/built%20with%20-Docker-blue.svg" alt="garie"></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
+  <h2 align="center"><a align="center" href="https://garie.io">garie.io</a><h2>
+</h2>
 
-  </p>
-</p>
+![Garie](./screenshots/garie-dark.png "Garie")
 
 ## Highlights
 
