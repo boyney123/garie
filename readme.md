@@ -2,12 +2,15 @@
 
 <p align="center">
   <p align="center">Making web performance assessable to everyone. <p>
-  <p align="center"><a align="center" href="https://garie.io">https://garie.io</a>
+  <p align="center"><a align="center" href="https://garie.io">https://garie.io</a><p>
+  <p align="center">
+	<a href="https://www.influxdata.com/"><img src="https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg" alt="garie"></a>
+		<a href="hhttps://grafana.com/"><img src="https://img.shields.io/badge/built%20with%20-Grafana-green.svg" alt="garie"></a>
+		<a href="https://www.docker.com/"><img src="https://img.shields.io/badge/built%20with%20-Docker-blue.svg" alt="garie"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
 
   </p>
 </p>
-
----
 
 ## Highlights
 
