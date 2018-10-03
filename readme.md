@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://garie.io">
-    <img alt="styled-components" src="./screenshots/garie-dark.png" height="250px" />
+    <img alt="styled-components" src="./screenshots/garie-dark.png" height="450px" />
   </a>
 </div>
 
