@@ -6,8 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <h2 align="center"><a align="center" href="https://garie.io">garie.io</a><h2>
-</h2>
+  <h3 align="center"><a align="center" href="https://garie.io">garie.io</a><h3>
+</h3>
 
 ![Garie](./screenshots/garie-dark.png "Garie")
 
@@ -16,7 +16,7 @@
 - Get setup with polling performance data and out of the box dashboards within minutes.
 - Setup CRON jobs to get performance data at any interval.
 - Webhook support (e.g Trigger collection of performance data every release).
-- Generates reports with recommened improvements for your website (Using Lighthouse)
+- Generates reports with recommended improvements for your website (Using Lighthouse)
 - Historic reports. See any report that was generated in the past.
 - Generates performance videos.
 - Plugin Architecture using Docker
@@ -26,8 +26,6 @@
 ## [Lighthouse](https://github.com/boyney123/garie-lighthouse)
 
 ![Garie](./screenshots/garie-lighthouse.png "Garie")
-
-<!-- ### [Lighthouse](https://github.com/boyney123/garie-lighthouse) -->
 
 <p align="center"><a href="https://travis-ci.org/boyney123/garie-lighthouse"><img src="https://img.shields.io/travis/boyney123/garie-lighthouse/master.svg" alt="Build Status"></a>
     <a href="https://codecov.io/gh/boyney123/garie-lighthouse/"><img src="https://codecov.io/gh/boyney123/garie-lighthouse/branch/master/graph/badge.svg?token=AoXW3EFgMP" alt="Codecov"></a>
