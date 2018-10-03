@@ -1,15 +1,17 @@
-## Garie - Making web performance assessable to everyone
+<div align="center">
+	<a href="https://garie.io">
+    <img alt="styled-components" src="./screenshots/garie-dark.png" height="250px" />
+  </a>
+</div>
 
-[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg)](https://www.influxdata.com/)
-[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-Grafana-green.svg)](https://grafana.com/)
-[![Built with InfluxDB](https://img.shields.io/badge/built%20with%20-Docker-blue.svg)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<p align="center">
-  <h3 align="center"><a align="center" href="https://garie.io">garie.io</a><h3>
-</h3>
-
-![Garie](./screenshots/garie-dark.png "Garie")
+<div align="center">
+<p align="center"><a align="center" href="https://garie.io">https://garie.io</a><p>
+  <p align="center">
+	<a href="https://www.influxdata.com/"><img src="https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg" alt="garie"></a>
+		<a href="hhttps://grafana.com/"><img src="https://img.shields.io/badge/built%20with%20-Grafana-green.svg" alt="garie"></a>
+		<a href="https://www.docker.com/"><img src="https://img.shields.io/badge/built%20with%20-Docker-blue.svg" alt="garie"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
+</div>
 
 ## Highlights
 
@@ -21,9 +23,22 @@
 - Generates performance videos.
 - Plugin Architecture using Docker
 
-# Currently supported plugins
+---
 
-## [Lighthouse](https://github.com/boyney123/garie-lighthouse)
+## [Docs](https://garie.io)
+
+**See the documentation at [garie.io/docs](https://garie.io/docs/getting-started/installation)** for more information about using `garie`!
+
+Quicklinks:
+
+- [**Getting started**](https://garie.io/docs/getting-started/installation)
+- [Viewing Dashboards](https://garie.io/docs/getting-started/viewing-dashboards)
+- [Building your first dashboard](https://garie.io/docs/creating-your-own-dashboard/getting-started)
+- [Examples of Garie](https://garie.io/docs/examples/example-list)
+
+## Plugins
+
+### [Lighthouse](https://github.com/boyney123/garie-lighthouse)
 
 ![Garie](./screenshots/garie-lighthouse.png "Garie")
 
