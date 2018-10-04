@@ -72,7 +72,7 @@
 			"title": "Lighthouse Reports",
 			"tooltip": "",
 			"type": "link",
-			"url": ":3000./reports"
+			"url": "https://example.garie.io:3000/reports"
 		}
 	],
 	"panels": [

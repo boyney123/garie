@@ -104,7 +104,7 @@
 			"type": "text"
 		},
 		{
-			"content": "## Other Links\n\n\n### - [Lighthouse Reports](http://localhost:3000/reports)\n\n\n### - [Performance Videos](http://localhost:3001/reports)\n\n",
+			"content": "## Other Links\n\n\n### - [Lighthouse Reports](http://example.garie.io:3000/reports)\n\n\n### - [Performance Videos](http://example.garie.io:3001/reports)\n\n",
 			"gridPos": {
 				"h": 4,
 				"w": 24,
