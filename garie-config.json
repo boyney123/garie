@@ -18,15 +18,6 @@
 					"report": true
 				}
 			]
-		},
-		{
-			"url": "https://news.ycombinator.com",
-			"plugins": [
-				{
-					"name": "lighthouse",
-					"report": true
-				}
-			]
 		}
 	]
 }
