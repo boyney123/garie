@@ -49,7 +49,7 @@ services:
   #   depends_on:
   #     - influxdb
   grafana:
-    image: grafana/grafana
+    image: "grafana/grafana:latest"
     ports:
       - 80:3000
     environment:
