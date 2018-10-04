@@ -1,0 +1,139 @@
+{
+	"__inputs": [],
+	"__requires": [
+		{
+			"type": "panel",
+			"id": "dashlist",
+			"name": "Dashboard list",
+			"version": "5.0.0"
+		},
+		{
+			"type": "grafana",
+			"id": "grafana",
+			"name": "Grafana",
+			"version": "5.2.4"
+		},
+		{
+			"type": "panel",
+			"id": "text",
+			"name": "Text",
+			"version": "5.0.0"
+		}
+	],
+	"annotations": {
+		"list": [
+			{
+				"builtIn": 1,
+				"datasource": "-- Grafana --",
+				"enable": true,
+				"hide": true,
+				"iconColor": "rgba(0, 211, 255, 1)",
+				"name": "Annotations & Alerts",
+				"type": "dashboard"
+			}
+		]
+	},
+	"editable": true,
+	"gnetId": null,
+	"graphTooltip": 0,
+	"id": null,
+	"links": [],
+	"panels": [
+		{
+			"content": "<div align=\"center\"><a href=\"https://garie.io\" target=\"_blank\"><img src=\"https://garie.io/img/garie-dark.png\" height=\"400px\" /></a></div>",
+			"gridPos": {
+				"h": 12,
+				"w": 7,
+				"x": 0,
+				"y": 0
+			},
+			"id": 6,
+			"links": [],
+			"mode": "html",
+			"title": "",
+			"transparent": true,
+			"type": "text"
+		},
+		{
+			"content": "# Welcome to Garie\n\nThank you for installing Garie, you can find our preconfigured dashboards below.\n\nIf you want to create your own dashboards please visit [our docs](https://garie.io/docs/creating-your-own-dashboard/getting-started).\n\nIf you have any problems are ideas to make Garie better please submit [issues or feature requests](https://github.com/boyney123/garie).",
+			"gridPos": {
+				"h": 12,
+				"w": 17,
+				"x": 7,
+				"y": 0
+			},
+			"id": 4,
+			"links": [],
+			"mode": "markdown",
+			"title": "",
+			"transparent": true,
+			"type": "text"
+		},
+		{
+			"folderId": null,
+			"gridPos": {
+				"h": 11,
+				"w": 12,
+				"x": 0,
+				"y": 12
+			},
+			"headings": true,
+			"id": 2,
+			"limit": 100,
+			"links": [],
+			"query": "",
+			"recent": false,
+			"search": true,
+			"starred": false,
+			"tags": [],
+			"title": "Preconfigured Dashboards",
+			"type": "dashlist"
+		},
+		{
+			"content": "<h2> Documentation </h2>\n\n<br />\n\n<h3><a href=\"https://garie.io/docs/using-garie/motivation\" target=\"_blank\">Motivation</a> </h3>\n<br />\n<h3><a href=\"https://garie.io/docs/using-garie/how-it-works\" target=\"_blank\">How Garie Works</a> </h3>\n<br />\n<h3><a href=\"https://garie.io/docs/getting-started/installation\" target=\"_blank\">Getting Started</a> </h3>\n<br />\n<h3><a href=\"https://garie.io/docs/creating-your-own-dashboard/getting-started\" target=\"_blank\">Builidng your first dashboard</a> </h3>\n<br />\n<h3><a href=\"https://garie.io/docs/advanced/exploring-data\" target=\"_blank\">Available data</a> </h3>\n<br />\n<h3><a href=\"https://garie.io/docs/getting-started/using-webhooks\" target=\"_blank\">Using Webhooks</a> </h3>\n\n\n\n",
+			"gridPos": {
+				"h": 11,
+				"w": 12,
+				"x": 12,
+				"y": 12
+			},
+			"id": 9,
+			"links": [],
+			"mode": "html",
+			"title": "",
+			"type": "text"
+		},
+		{
+			"content": "## Other Links\n\n\n### - [Lighthouse Reports](http://localhost:3000/reports)\n\n\n### - [Performance Videos](http://localhost:3001/reports)\n\n",
+			"gridPos": {
+				"h": 4,
+				"w": 24,
+				"x": 0,
+				"y": 23
+			},
+			"id": 8,
+			"links": [],
+			"mode": "markdown",
+			"title": "",
+			"type": "text"
+		}
+	],
+	"schemaVersion": 16,
+	"style": "dark",
+	"tags": [],
+	"templating": {
+		"list": []
+	},
+	"time": {
+		"from": "now-6h",
+		"to": "now"
+	},
+	"timepicker": {
+		"refresh_intervals": ["5s", "10s", "30s", "1m", "5m", "15m", "30m", "1h", "2h", "1d"],
+		"time_options": ["5m", "15m", "1h", "6h", "12h", "24h", "2d", "7d", "30d"]
+	},
+	"timezone": "",
+	"title": "Introduction",
+	"uid": "uyJFCzJik",
+	"version": 3
+}
