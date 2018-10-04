@@ -58,7 +58,9 @@ services:
       - "./grafana_data:/var/lib/grafana"
       - "./config/grafana/provisioning:/etc/grafana/provisioning"
       - "./config/grafana/grafana.ini:/etc/grafana/grafana.ini"
-    user: "104"
+    secrets:
+      uid: "472"
+      gid: "472"
     depends_on:
       - influxdb
   # chronograf:
