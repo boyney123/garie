@@ -20,7 +20,7 @@
 			]
 		},
 		{
-			"url": "https://www.bbc.co.uk",
+			"url": "https://news.ycombinator.com",
 			"plugins": [
 				{
 					"name": "lighthouse",
