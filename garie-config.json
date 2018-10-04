@@ -9,6 +9,24 @@
 					"report": true
 				}
 			]
+		},
+		{
+			"url": "https://www.cnn.com",
+			"plugins": [
+				{
+					"name": "lighthouse",
+					"report": true
+				}
+			]
+		},
+		{
+			"url": "https://www.bbc.co.uk",
+			"plugins": [
+				{
+					"name": "lighthouse",
+					"report": true
+				}
+			]
 		}
 	]
 }
