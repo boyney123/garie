@@ -7,3 +7,4 @@ logs
 reports
 /influxdb
 /grafana_data
+DS_Store

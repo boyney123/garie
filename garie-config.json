@@ -1,5 +1,5 @@
 {
-	"cron": "0 */10 * * * *",
+	"cron": "0 */4 * * *",
 	"urls": [
 		{
 			"url": "https://www.google.co.uk",

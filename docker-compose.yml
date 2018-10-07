@@ -60,6 +60,7 @@ services:
       - "./config/grafana/grafana.ini:/etc/grafana/grafana.ini"
     depends_on:
       - influxdb
+    user: ${CURRENT_UID}
   chronograf:
     image: "chronograf:latest"
     ports:
