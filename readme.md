@@ -63,7 +63,7 @@ Garie uses Pagespeed insights to get information about the applications page wei
 
 ## [Browsertime](https://github.com/boyney123/garie-pagespeed-insights)
 
-![Pagespeed Insights](./screenshots/garie-pagespeed-insights.png "Pagespeed Insights")
+![Pagespeed Insights](./screenshots/browsertime-logo.png "Pagespeed Insights")
 
 <p align="center">
 <a href="https://travis-ci.org/boyney123/garie-browsertime"><img src="https://img.shields.io/travis/boyney123/garie-browsertime/master.svg" alt="Build Status"></a>
