@@ -806,7 +806,7 @@
 				}
 			],
 			"thresholds": "45, 75",
-			"title": "Performance Score",
+			"title": "SEO Score",
 			"type": "singlestat",
 			"valueFontSize": "80%",
 			"valueMaps": [
