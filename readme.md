@@ -61,7 +61,7 @@ Garie uses Lighthouse to generate reports and also store the lighthouse data int
 
 Garie uses Pagespeed insights to get information about the applications page weight and load times.
 
-## [Browsertime](https://github.com/boyney123/garie-pagespeed-insights)
+## [Browsertime](https://github.com/boyney123/garie-browsertime)
 
 ![Pagespeed Insights](./screenshots/browsertime-logo.png "Pagespeed Insights")
 
