@@ -1,11 +1,11 @@
 <div align="center">
-	<a href="https://garie.io">
+	<a href="https://garie.netlify.com/">
     <img alt="styled-components" src="./screenshots/garie-dark.png" width="618px" />
   </a>
 </div>
 
 <div align="center">
-<p align="center"><a align="center" href="https://garie.io">https://garie.io</a><p>
+<p align="center"><a align="center" href="https://garie.netlify.com/">https://garie.netlify.com/</a><p>
   <p align="center">
 	<a href="https://www.influxdata.com/"><img src="https://img.shields.io/badge/built%20with%20-InfluxDB-green.svg" alt="garie"></a>
 		<a href="hhttps://grafana.com/"><img src="https://img.shields.io/badge/built%20with%20-Grafana-green.svg" alt="garie"></a>
@@ -25,16 +25,16 @@
 
 ---
 
-## [Docs](https://garie.io)
+## [Docs](https://garie.netlify.com/)
 
-**See the documentation at [garie.io/docs](https://garie.io/docs/getting-started/installation)** for more information about using `garie`!
+**See the documentation at [garie.io/docs](https://garie.netlify.com/docs/getting-started/installation)** for more information about using `garie`!
 
 Quicklinks:
 
-- [**Getting started**](https://garie.io/docs/getting-started/installation)
-- [Viewing Dashboards](https://garie.io/docs/getting-started/viewing-dashboards)
-- [Building your first dashboard](https://garie.io/docs/creating-your-own-dashboard/getting-started)
-- [Examples of Garie](https://garie.io/docs/examples/example-list)
+- [**Getting started**](https://garie.netlify.com/docs/getting-started/installation)
+- [Viewing Dashboards](https://garie.netlify.com/docs/getting-started/viewing-dashboards)
+- [Building your first dashboard](https://garie.netlify.com/docs/creating-your-own-dashboard/getting-started)
+- [Examples of Garie](https://garie.netlify.com/docs/examples/example-list)
 
 ## Plugins
 
