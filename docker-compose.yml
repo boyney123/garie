@@ -1,7 +1,7 @@
 version: "3"
 services:
   influxdb:
-    image: "influxdb:latest"
+    image: "influxdb:1.6.6"
     ports:
       - 8086:8086
     environment:
