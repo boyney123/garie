@@ -190,7 +190,7 @@
 					]
 				},
 				{
-					"alias": "Perfromance",
+					"alias": "Performance",
 					"groupBy": [],
 					"limit": "1",
 					"measurement": "performance-score",
