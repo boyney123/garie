@@ -13,6 +13,8 @@
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
 </div>
 
+### Heads up - I don't have much time to maintain this project. If you want to help maintain it please feel free to reach out. 
+
 ## Highlights
 
 - Get setup with polling performance data and out of the box dashboards within minutes.
